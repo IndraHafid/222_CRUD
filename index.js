@@ -1,7 +1,7 @@
 const express = require('express');
 let mysql = require('mysql2');
 const app = express();
-const port = 3380;
+const port = 3308;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -16,6 +16,7 @@ app.listen(port, () => {
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: '',
-  database: 'biodata'
+  password: 'Vm.fidzz22',
+  database: 'biodata',
+  port: 3308
 });
